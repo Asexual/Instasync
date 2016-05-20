@@ -1,0 +1,12 @@
+SELECT * FROM banners a JOIN users b USING(userId) where b.remaining > 0  Order By Rand() limit 1 
+
+update users tblUsers join banners tblBanners
+                                   ON 
+                                   tblUsers.userId = tblBanners.userId
+                                   SET 
+                                   tblBanners.impressions = tblBanners.impressions + 1,
+                                   tblUsers.totalViews = tblUsers.totalViews + 1,
+                                   tblUsers.remaining = tblUsers.remaining - 1
+                                   Where tblBanners.bannerId = 5;
+                                   
+                                   

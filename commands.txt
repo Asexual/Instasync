@@ -1,0 +1,62 @@
+Commands are entered using '
+
+Commands
+
+Permission: 0 (all unregistered users and non mods are permission 0, anything greater than 0 is considered a mod)
+Most of these commands happen automatically but can be done via chat manually.
+
+note: clicking a username in the chat will add the username to the input box
+note: clicking a video in the playlist will add it's 11 character vid code to the inputbox
+
+
+all permissions
+
+'skip //apples your skip (same as clicking Skip Video
+
+'reload //destroys the players and reloads it (useful incase of buffering issues, flash player crashing etc)
+'resynch //resych the player, This happens automatically so probally useless.
+'ready //loads player when the player is ready (also reloads the vid without destroying the player like 'reload
+
+
+
+Mod permissions
+
+'kick username
+'ban username
+'unban username
+'clearbans //remove all bans
+'next //skip current video (play next button is currently disabled as I plan on modifying the player buttons in the future)
+'remove <position> //removes video (same as clicking the X next to time)
+'purge username //removes all videos by username
+'move position position //position starts at 0, so first item is 0 not 1. This will soon be integrated into the UI (drag and drop etc)
+                         Example: TO move the last video to the begining of the playlist youd go 'move indexoflastvid 0
+'clean //Removes all videos that are above the currently playing video (I.e. already played)
+'toggleplaylistlock //toggles the playlistlock switching between registered users + mods to only mods (THIS IS ENABLED BY DEFAULT. TYPE THIS TO ALLOW NONMODS TO ADD VIDEOS
+                      More on this: True = playlist is locked, false = playlist unlocked. This is getting a visual display in the next update.
+'play <position> plays video by the current vid code (plan on adding a button to this on the playlist videos)
+'pause //pause the video for everyone
+'resume //resume video for everyone
+'seekto <seconds> seeks to this amount of seconds for all users (seconds IE. 90 = 1.5 minutes)
+'seekfrom <+-seconds> Seeks from current position to number I.E. 'seekto -30 will go back 30 seconds, 'seekto 30 will go forward 30 seconds
+'setskip <1-100> set skip percent 1-100 (unnamed and greynames do not count towards skip ratio, as they cannot skip themselves
+           ^ THIS IS A PERCENTAGE NOT THE NUMBER OF SKIPS PLS STOP BEING SO NEW
+	   
+'motd <message> sets the message that greets users when joining, also emits the message to all users in room
+
+'banlist shows the ban list
+'modlist do I really need to repeat myself
+
+'save //(mod only) Saves the current playlist to disk. Every server restart the playlist will return to the last save
+'togglefilter //toggle the ability to filter greyname chat. (filter is off by default, doesn't currently have a notification when toggled.
+'toggleautosynch ///turns autosynch on/off
+
+~new
+'toggleautosynch //toggle the auto synch
+'leaverban username //Searches the last 20 recent leavers and bans the last user who left with username
+
+Room Owner
+'mod username //mod the username
+'demod username //do you really need help figuring this one out
+'description set rooms description on the main page
+
+

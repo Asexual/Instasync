@@ -1,0 +1,440 @@
+/* mainly front page stuff but might be shared with rooms */
+body, html {
+    height:100%; /* ADD this */
+    width: 100%;
+    min-width: 1000px;
+}
+.container {
+      min-height: 100%;
+      height: auto !important;
+      margin: 0 auto -42px; /* the bottom margin is the negative value of the footer's height */
+      position: relative;
+}
+/* Index Page */
+.index-content, .help-content{
+    border-radius: 6px;
+    width: 1000px;
+    background-color: rgba(255,255,255,0.65);
+    margin:auto;
+    margin-top: 10px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
+}
+.index-content .content-header{
+    overflow: hidden;
+}
+.index-content .content-header .left{
+    float: left;
+    width: 720px;
+    margin: 10px 0px 0px 10px;
+}
+.index-content .content-header .right{
+    float: right;
+    margin: 10px 10px 0px 0px;
+}
+.index-content .content-header h1{
+    font-weight: bold;
+}
+.index-content .content-header .left p, .help-content p{
+
+    padding: 0px 5px 5px 5px;
+    text-shadow: 1px 1px rgb(154,154,154);
+    line-height: 20px;
+    font-family: Cambria, Georgia, serif;
+}
+.index-content .content-header .left .social{
+    padding: 5px;
+    overflow: hidden;
+}
+.index-content .content-header .left .social .network{
+    margin: 2px;
+    float: right;
+}
+.index-content .content-header .left .social .media{
+    width: 32px;
+    float: left;
+    margin: 2px;
+}
+.index-content .content-body{
+    margin-top: 20px;
+    padding: 15px;
+}
+.index-content .content-body .room{
+    width: 320px;
+    overflow: hidden;
+    margin: 0px 0px 2px 0px;
+    height: 130px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 4px;
+    display: inline-block;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+.index-content .content-body .room .left{
+    width: 120px;
+    margin: 15px 5px 5px;
+    float: left;
+    position: relative;
+}
+.index-content .content-body .room .left .title{
+    position: absolute;
+    width: 120px;
+    bottom: 30px;
+    max-height: 50px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+}
+.index-content .content-body .room .left .viewers{
+    text-align: center;
+    width: 120px;
+    background-color: rgba(0,0,0,0.1);
+}
+.index-content .content-body .room .right{
+    width: 185px;
+    margin-top: 15px;
+    float: left;
+}
+.index-content .content-body .room .right .name{
+    margin-bottom: 2px;
+    text-shadow: none;
+}
+.index-content .content-body .room .right .about{
+    font-size: 12px;   
+    word-wrap: break-word;
+    height: 90px;
+    overflow: hidden;
+    font-family: Cambria,Georgia,serif;
+    font-size: 13px;
+}
+.help-content{
+    padding: 10px;
+}
+
+/* -----------*/
+#roomFooter .roomFooter{
+    width: 800px;
+    min-height: 100px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    padding:5px;
+}
+#footer {
+      bottom: 0px;
+      background-color: rgb(25,25,25);
+      position: absolute;
+      width: 100%;
+      text-align: right;   
+      margin-bottom: 4px;
+}
+#footer .footer{
+    margin: auto;
+    width: 1000px;
+    height:100%;
+    color: white;
+    padding: 2px;
+    position: relative;
+}
+#footer, .push {
+    height: 42px;
+    margin-top: 10px;
+}
+.footer .footerNav
+{
+    list-style: none; 
+    width: 325px; height:
+    25px; margin: 
+    0px auto;
+}
+.footer .footerNav li
+{
+    float: left;
+    margin: 5px 10px 5px 10px;
+}
+h1{
+    font-weight: bold;
+}
+.b {
+white-space: nowrap;
+}
+#loginfrm{
+    float: right; 
+    padding-top: 5px; 
+    position: relative;
+}
+#loginfrm #register-form{
+    background-color: rgba(255,255,255,0.99);
+    height: 125px;
+    width: 250px;
+    position: absolute;
+    top: 50px;
+    left: -120px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 3px 3px 5px #222222;  
+    z-index: 1;
+}
+.closeform{
+    float: right;
+    height: 16px;
+    width:16px;
+    color: white;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: 3px;
+    background-image:url('/images/close.png');
+}
+.formmsg{   
+    margin: 3px;
+    font-size: 75%;
+    display: inline-block;
+    color: red;
+}
+.formbox{   
+    margin: 2px;
+}
+.formsubmit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.hashtext{
+    color: #7882BF;
+}
+.system-msg{
+    color: #7882BF;    
+}
+.greentext{
+    color: #789922;
+}
+.errortext{
+    color: rgb(204,65,65);
+}
+.muted{
+    background-color: red;
+}
+.howTo
+{
+    color: white;
+    padding: 5px;
+}
+.howTo li
+{
+    margin: 2px;
+}
+#bio{
+    position: absolute;
+    width: 240px;
+    height: 140px;
+    left: 120px;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 5px #222222;
+    z-index: 5;
+}
+#bio .avatar{
+    position: absolute;
+    left: 140px;
+    top: 20px;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+#bio .userinfo{
+    margin: 2px;
+    position: absolute;
+    left: 2px;
+    text-align: left;
+    top: 20px;
+    width: 120px;
+    height: 100px;
+    overflow-x: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    padding: 2px;
+    word-wrap: break-word;
+}
+#bio .username{
+    position: absolute;
+    margin: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#bio .avatar img{
+    height: 90px;
+    width: 90px;
+}
+#bio #kick{
+    top: 115px;
+    left: 185px;
+    position: absolute;
+}
+#bio #ban{
+    left: 140px;
+    top: 115px;
+    position: absolute;
+}
+#mute{
+    font-size: 11px;
+    top: 0px;
+    left: 140px;
+    position: absolute;
+    top: 1px;
+    left: 188px;
+    display: none;
+}
+#unmute{
+    font-size: 11px;
+    top: 0px;
+    left: 140px;
+    position: absolute;
+    top: 1px;
+    left: 176px;  
+    display: none;
+}
+.mod{
+    visibility: hidden;
+}
+#toggleplaylistlock{
+    cursor: pointer;
+}
+.x{
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    background-image:url('/images/close.png');
+}
+.x:hover{
+    opacity: 0.7;
+}
+.basic-button {
+
+    background-image: linear-gradient(#888888, #555555);
+    border-color: #CCCCCC #BBBBBB #A0A0A0;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font: 12px arial,sans-serif;
+    outline: medium none;
+    padding: 3px 8px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: white;
+}
+.basic-button:hover {
+    border-color: #444444;
+}
+/* Player Control Slider area stuff etc I guess */
+.sliderContainer{
+    
+}
+.sliderContainer .slider{
+    margin-left: 5px;
+    width: 400px;
+}
+#slider .ui-state-hover{
+    opacity: 0.8;
+}
+#slider .info{
+    font-size: 10px; float: right;
+}
+/* ~~~~~~~------------------------------------------------------------- */
+/* POLL STYLE */
+#create-pollBtn{
+    float:right;
+}
+#create-poll{
+    width: 300px;
+    background-color: white;
+    border-style:solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 3px 3px 5px #222222; 
+    padding-bottom: 4px;
+}
+.poll-container{
+    width: 400px;
+    float: right;
+    margin: 30px 0px 0px 0px;
+}
+.poll-container .close-poll{
+    position: absolute;
+    left: 385px;
+    top: 0px;
+}
+/* ~~~~~~~ */
+/* CHAT STYLE */
+#chat .chatsettings{
+    width: 16px;
+    height: 16px;
+    background-image: url("/images/gear.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 5px;
+    left: 315px;
+    cursor: pointer;
+    opacity: 1.0;
+}
+#chat .chatsettings:hover{
+    opacity: 0.7;
+}
+#chat .chatfilter{
+    
+}
+/* ~~~~~~~ */
+/* Settings page stuff */
+#tabs{
+    font-size: 14px;
+}
+.LoggedIn{
+    display: none;
+}
+#tabs .section h3{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#tabs .section{
+    border-style: solid;
+    border-color: #D7D7D7;
+    border-width: 1px;
+    width: 370px;
+    overflow: auto;
+    padding: 10px;
+}
+#tabs .section .error{
+    
+}
+#tabs .section .option{
+    overflow: auto;
+}
+#tabs .option span{
+    float: left;
+    display: inline-block;
+    text-align: right;
+    width: 135px;
+    margin-right: 10px;
+}
+#tabs .option textarea, #tabs .option input[type=text]{
+    float: left;
+}
+#tabs textarea{
+    resize: vertical;
+}
+/* ----------------- */
+
+

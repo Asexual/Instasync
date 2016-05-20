@@ -1,0 +1,10 @@
+TypeError: Object bfc10fb1ffec59e44d9d74bb5b514606 has no method 'substringData'
+    at Request._callback (c:\wamp\www\server\server.js:120:122)
+    at Request.self.callback (c:\wamp\www\server\node_modules\request\index.js:142:22)
+    at Request.EventEmitter.emit (events.js:98:17)
+    at Request.<anonymous> (c:\wamp\www\server\node_modules\request\index.js:856:14)
+    at Request.EventEmitter.emit (events.js:117:20)
+    at IncomingMessage.<anonymous> (c:\wamp\www\server\node_modules\request\index.js:808:12)
+    at IncomingMessage.EventEmitter.emit (events.js:117:20)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)---END OF ERROR----

@@ -1,0 +1,43 @@
+Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [mc_fee] => 0.44
+    [txn_id] => 514445167
+    [receiver_email] => seller@paypalsandbox.com
+    [custom] => xyz123
+    [reason_code] => refund
+    [payment_date] => 02:23:21 20 Oct 2013 PDT
+    [address_country_code] => US
+    [address_zip] => 95131
+    [item_name1] => something
+    [mc_handling] => 2.06
+    [mc_handling1] => 1.67
+    [tax] => 2.02
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [verify_sign] => AiPC9BjkCyDFQXbSkoZcgqH3hpacA1KMUNP16k89WzJgItBPv5xGG.BI
+    [address_country] => United States
+    [payment_status] => Refunded
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.4
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 15.34
+    [mc_shipping] => 3.02
+    [mc_shipping1] => 1.02
+    [item_number1] => AK-1234
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [parent_txn_id] => EARLIERTRANSID001
+    [payment_type] => instant
+    [address_street] => 123, any street
+)
